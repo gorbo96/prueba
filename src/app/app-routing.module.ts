@@ -10,6 +10,18 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'acercade',
+    loadChildren: () => import('./pages/acercade/acercade.module').then( m => m.AcercadePageModule)
+  }, 
+  {
+    path: 'contactos/crear',
+    loadChildren: () => import('./pages/contactos/crear/crear.module').then( m => m.CrearPageModule)
+  },
+  {
+    path: 'contactos/lista',
+    loadChildren: () => import('./pages/contactos/lista/lista.module').then( m => m.ListaPageModule)
   }
 ];
 
